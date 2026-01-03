@@ -1,4 +1,4 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+#Seja bem-vindo(a) à organização de repositórios do Projeto InfiniTEA
+Nosso intuito é finalizar o curso voltado para o Front-end, que foi oferecido pelo Serasa em parceria com o Instituto PROA, onde ex-proanos tiveram a possibilidade de, aprender novas habilidades e/ou aperfeiçoar aquelas das quais já tinham conhecimento.
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+Nosso projeto é especialmente focado em pessoas que fazem parte do espectro autista, mais especificamente aquelas que querem adentrar ao mercado de trabalho, crescer e serem vistas além do autismo, com bastante acolhimento e empatia.
