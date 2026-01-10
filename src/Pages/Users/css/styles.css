@@ -1,0 +1,219 @@
+/* =========================================
+   1. Configurações Globais
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Centraliza tudo na tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante altura mínima da tela cheia */
+    padding: 20px;
+    
+    /* Imagem de fundo com sobreposição escura */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/tea.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================================
+   2. Logo (Fora do Card)
+   ========================================= */
+#logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 25px; /* Espaço entre o logo e o card branco */
+    display: block;
+}
+
+/* =========================================
+   3. Card de Cadastro (O Formulário)
+   ========================================= */
+#cadastro-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px; /* Limite de largura para não ficar gigante em monitores */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+    /* Flexbox para alinhar os itens internamente */
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* =========================================
+   4. Inputs e Labels (Tags <i>)
+   ========================================= */
+
+/* Estiliza as tags <i> como se fossem Labels/Títulos acima do input */
+#cadastro-form i {
+    font-style: normal; /* Remove itálico */
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 15px; /* Espaço do item anterior */
+    display: block; /* Garante que fique em linha própria */
+    font-size: 14px;
+}
+
+/* Remove margem do topo do primeiro ícone para alinhar com o título */
+#cadastro-form i:first-of-type {
+    margin-top: 0;
+}
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border-color: #9FD6F3; /* Azul do tema */
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(159, 214, 243, 0.2);
+}   
+
+.input-wrapper {
+    position: relative; /* Contexto para o position absolute */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Garante que o input ocupe todo o espaço */
+.input-wrapper input {
+    width: 100%;
+    padding-right: 45px; /* Espaço para o texto não ficar embaixo do ícone */
+}
+
+/* O ícone do olho */
+.icon-eye {
+    position: absolute;
+    right: 15px;         /* Colado na direita */
+    top: 50%;            /* Centralizado verticalmente */
+    transform: translateY(-50%); /* Ajuste fino do centro */
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D65DB1;      /* Cor roxa do seu layout */
+    width: 24px;
+    height: 24px;
+}
+
+.icon-eye:hover {
+    color: #a34686;
+}
+
+/* =========================================
+   5. Botões e Links
+   ========================================= */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #9FD6F3; /* Azul Claro da Imagem */
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #7EC0E4;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+p a {
+    color: #D65DB1; /* Rosa/Roxo da Imagem */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   6. Área de Social Login
+   ========================================= */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin: 25px 0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+.divider::before { margin-right: 10px; }
+.divider::after { margin-left: 10px; }
+
+.social-login {
+    display: flex;
+    flex-direction: column; /* Empilha os botões como na imagem */
+    gap: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    transition: background 0.2s;
+}
+
+.social-btn:hover {
+    background-color: #f7f7f7;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
