@@ -1,0 +1,143 @@
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, Helvetica, sans-serif; }
+
+    body { background:#fff; color:#4b4453; line-height:1.6; }
+
+    header {
+      background:#f1f5ff;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    nav a {
+      margin:0 12px;
+      text-decoration:none;
+      color:#4b4453;
+      cursor:pointer;
+    }
+
+    .btn-login {
+      background:#c4b5fd; /* lilás pastel */
+      padding:8px 20px;
+      border-radius:20px;
+      font-weight:bold;
+    }
+
+    section { padding:60px 10%; text-align:center; }
+
+    .hero { 
+      background:#fde2e4; /* rosa pastel */
+      padding:80px 10%; 
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
+      margin-top:30px;
+    }
+
+    .box {
+      background:#f8fafc;
+      padding:25px;
+      border-radius:16px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .impacto {
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+      margin-top:30px;
+      font-weight:bold;
+      color:#2563eb;
+    }
+
+    .cta { 
+      background:#ede9fe; /* roxo pastel claro */
+      padding:80px 10%; 
+    }
+
+    .cta button {
+      margin-top:20px;
+      padding:14px 32px;
+      border:none;
+      border-radius:30px;
+      background:#c4b5fd; /* lilás pastel */
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    #mensagem { display:none; margin-top:20px; color:#047857; font-weight:bold; }
+
+    footer {
+      background:#f9fafb;
+      padding:50px 10%;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
+    }
+
+    .social {
+      display:flex;
+      gap:18px;
+      justify-content:center;
+      margin-top:10px;
+    }
+
+    .social a { font-size:1.6rem; }
+    .social a:nth-child(1){color:#f472b6;} /* rosa */
+    .social a:nth-child(2){color:#34d399;} /* verde água */
+    .social a:nth-child(3){color:#a78bfa;} /* roxo claro */
+
+    .copy { text-align:center; margin-top:30px; font-size:0.9rem; color:#6b7280; }
+
+    /* LOGIN */
+    #loginModal {
+      display:none;
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.5);
+      justify-content:center;
+      align-items:center;
+      z-index:1000;
+    }
+
+    .login-box {
+      background:#fff;
+      padding:30px;
+      border-radius:16px;
+      width:320px;
+      text-align:center;
+    }
+
+    .login-box input {
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border-radius:8px;
+      border:1px solid #ccc;
+    }
+
+    .login-box button {
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:20px;
+      background:#c4b5fd; /* lilás pastel */
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    .fechar { margin-top:15px; cursor:pointer; color:#6d28d9; }
+
+    @media (max-width:768px){
+      .impacto { flex-direction:column; }
+      header { flex-direction:column; gap:15px; }
+    }
