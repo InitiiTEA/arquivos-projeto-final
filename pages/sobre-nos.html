@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>InfiniTEA | Inclusão Profissional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./../css/sobre-nos.css"/>
+</head>
+
+<body>
+
+<header>
+  <h2>InfiniTEA</h2>
+  <nav>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#candidatos">Para Candidatos</a>
+    <a href="#empresas">Para Empresas</a>
+    <a class="btn-login" onclick="abrirLogin()">Entrar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Conectando talentos autistas a empresas inclusivas</h1>
+  <p>A InfiniTEA nasceu para transformar o acesso ao mercado de trabalho por meio da inclusão, do respeito e do apoio especializado.</p>
+</section>
+
+<section id="sobre">
+  <h2>Quem somos</h2>
+  <p>
+    A InfiniTEA é uma plataforma de empregabilidade dedicada a pessoas com Transtorno do Espectro Autista (TEA).
+    Nosso objetivo é criar conexões reais entre talentos e empresas que enxergam a diversidade como um valor estratégico e humano.
+  </p>
+</section>
+
+<section>
+  <h2>Nosso propósito</h2>
+  <div class="grid">
+    <div class="box"><h3>Missão</h3><p>Promover a inclusão profissional de pessoas autistas de forma ética, acessível e sustentável.</p></div>
+    <div class="box"><h3>Visão</h3><p>Ser referência em empregabilidade inclusiva no Brasil.</p></div>
+    <div class="box"><h3>Valores</h3><p>Inclusão · Respeito · Diversidade · Acessibilidade · Responsabilidade social</p></div>
+  </div>
+</section>
+
+<section id="candidatos">
+  <h2>Para Candidatos</h2>
+  <p>Buscar vagas · Criar perfil · Dicas de carreira · Recursos</p>
+</section>
+
+<section id="empresas">
+  <h2>Para Empresas</h2>
+  <p>Anunciar vaga · Sobre inclusão · Consultoria · Planos</p>
+</section>
+
+<section>
+  <h2>Impacto social</h2>
+  <p>
+    Parte da receita da InfiniTEA é destinada ao apoio de psicólogos especializados em TEA,
+    fortalecendo a saúde mental, o desenvolvimento profissional e a inclusão no ambiente corporativo.
+  </p>
+  <div class="impacto">
+    <div>+500<br>profissionais cadastrados</div>
+    <div>+120<br>empresas inclusivas</div>
+    <div>+30<br>psicólogos apoiados</div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Inclusão não é apenas uma escolha,<br>é um compromisso com o futuro.</h2>
+  <button onclick="mostrarMensagem()">Quero fazer parte dessa mudança</button>
+  <div id="mensagem">💜 Agradecemos seu interesse!</div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Para Candidatos</h4>
+      <p>Buscar vagas<br>Criar perfil<br>Dicas de carreira<br>Recursos</p>
+    </div>
+
+    <div>
+      <h4>Para Empresas</h4>
+      <p>Anunciar vaga<br>Sobre inclusão<br>Consultoria<br>Planos</p>
+    </div>
+
+    <div>
+      <h4>Contato</h4>
+      <p>Sobre nós<br>Fale conosco<br>FAQ</p>
+      <div class="social">
+        <a><i class="fa-solid fa-envelope"></i></a>
+        <a><i class="fa-brands fa-linkedin"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    © 2025 InfiniTEA. Todos os direitos reservados.<br>
+    Política de Privacidade · Termos de Uso
+  </div>
+</footer>
+
+<!-- LOGIN -->
+<div id="loginModal">
+  <div class="login-box">
+    <h2>Entrar</h2>
+    <input type="email" placeholder="E-mail">
+    <input type="password" placeholder="Senha">
+    <button>Entrar</button>
+    <div class="fechar" onclick="fecharLogin()">Fechar</div>
+  </div>
+</div>
+
+<script src="./../js/sobre-nos.js">
+  
+</script>
+
+</body>
+</html>
