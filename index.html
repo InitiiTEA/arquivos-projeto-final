@@ -22,9 +22,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
+     <header class="header">
+    <div class="logo">
+        <img src="./Icons/CreativeInfiniTEA.svg" alt="InfiniTEA Logo">
+    </div>
+
+    <nav class="nav" id="nav-menu">
+        <a href="#">Vagas</a>
+        <a href="./pages/sobre.html">Sobre</a>
+        <a href="#">Para Empresas</a>
+        <a href="#">Recursos</a>
+        <a href="./pages/cadastro.html" class="mobile-only-link">Cadastrar</a>
+    </nav>
+
+    <div class="actions">
+        <button class="icon-btn" id="toggleTheme" aria-label="Alternar tema">
+            <img src="./img/logotema.svg" alt="Ícone Tema">
+        </button>
+
+        <a href="./pages/login.html" class="btn-outline">Entrar</a>
+        <a href="./pages/cadastro.html" class="btn-primary desktop-only">Cadastro</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
     <main>
         <section class="pg-inicial">
             <div class="homepg">
@@ -919,6 +948,7 @@
     </footer>
 
     <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
     </body>
 
 </html>
