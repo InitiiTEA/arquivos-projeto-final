@@ -40,6 +40,12 @@ body {
     color: #4f46e5;
 }
 
+
+.logo a {
+    text-decoration: none;
+    color: #5b5bd6;
+}
+
 .auth {
     display: flex;
     align-items: center;
