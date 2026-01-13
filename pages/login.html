@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniTEA</title>
+    <link rel="stylesheet" href="./../css/login.css">
+</head>
+<body>
+    <img src="../Icons/CreativeInfiniTEA.svg" alt="InfiniTEA Logo" width="200">
+    <form class="input-group" action="/login" method="post" id="login-form">
+        <h1>Candidato / Empresa </h1>
+        
+        <i class="icon-email"></i>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        <br>
+
+        <div class="input-wrapper">
+            <i class="icon-senha"></i>
+            <input type="password" id="senha" name="password" placeholder="Digite sua senha" required>
+            <span class="icon-eye"></span>
+        </div>
+        
+        <button type="submit" class="btn-primary">Entrar</button>
+
+        <a href="#"><p>Esqueceu sua senha?</p></a>
+
+        <div class="divider">ou entre com</div>
+        <div class="social-login">
+            <button type="button" class="social-btn google-btn"><img src="./../Icons/google-icon.png"> <b>Entrar com Google</b></button>
+            <button type="button" class="social-btn linkedin-btn"><img src="./../Icons/linkedin-icon.png"> <b>Entrar com Linkedin</b></button>
+            <button type="button" class="social-btn proa-btn"><img src="./../Icons/proa-icon.png"><b>Entrar com Proa</b></button>
+        </div>
+        <p>Ainda não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
+    </form>
+     <script src="./../js/login.js"></script>
+</body>
+
+</html>
