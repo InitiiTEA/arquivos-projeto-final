@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfiniTEA</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +17,49 @@
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
+    <link rel="stylesheet" href="./css/geral.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
+     <header class="header">
+    <div class="logo">
+        <img src="./Icons/CreativeInfiniTEA.svg" alt="InfiniTEA Logo">
+    </div>
+
+    <nav class="nav" id="nav-menu">
+        <a href="#">Vagas</a>
+        <a href="./pages/sobre.html">Sobre</a>
+        <a href="#">Para Empresas</a>
+        <a href="#">Recursos</a>
+        <a href="./pages/cadastro.html" class="mobile-only-link">Cadastrar</a>
+    </nav>
+
+    <div class="actions">
+        <button class="icon-btn" id="toggleTheme" aria-label="Alternar tema">
+            <img src="./img/logotema.svg" alt="Ícone Tema">
+        </button>
+
+        <a href="./pages/login.html" class="btn-outline">Entrar</a>
+        <a href="./pages/cadastro.html" class="btn-primary desktop-only">Cadastro</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
     <main>
         <section class="pg-inicial">
             <div class="homepg">
                 <h1>Sua carreira, seu jeito</h1>
                 <p>Conectamos pessoas autistas a oportunidades de trabalho em ambientes inclusivos e acolhedores</p>
             </div>
-            
             <nav>
                 <div class="cargo">
                     <span><i class="fi fi-rr-briefcase-blank"></i></span>
@@ -38,10 +71,9 @@
                 </div>
                 <button><span><i class="fi fi-rr-search"></i></span> Buscar vagas</button>
             </nav>
-
         </section>
 
-        <section class="dstq-vagas">
+        <section class="dstq-vagas" id="vagas">
             <h2>Vagas em destaque</h2>
             <p>
                 Oportunidades selecionadas em empresas comprometidas com a inclusão
@@ -85,15 +117,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Analista de Dados</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Data Solutions</p>
-
+                    <div class="title-card">
+                        <h3>Analista de Dados</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Data Solutions</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> Rio de Janeiro, RJ - Híbrido</p>
@@ -120,15 +149,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Designer UX/UI</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Creative Studio</p>
-
+                    <div class="title-card">
+                        <h3>Designer UX/UI</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Creative Studio</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> Belo Horizonte, MG - Remoto</p>
@@ -154,15 +180,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Assistente Administrativo</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Empresa Modelo</p>
-
+                    <div class="title-card">
+                        <h3>Assistente Administrativo</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Empresa Modelo</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> Curitiba, PR</p>
@@ -187,15 +210,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Suporte Técnico</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>TechSupport+</p>
-
+                    <div class="title-card">
+                        <h3>Suporte Técnico</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>TechSupport+</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> Porto Alegre, RS - Remoto</p>
@@ -221,15 +241,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Redator de Conteúdo</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Conteúdo Digital</p>
-
+                    <div class="title-card">
+                        <h3>Redator de Conteúdo</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Conteúdo Digital</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> São Paulo, SP - Remoto</p>
@@ -255,15 +272,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Analista de Qualidade (QA)</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Software Testing Inc.</p>
-
+                    <div class="title-card">
+                        <h3>Analista de Qualidade (QA)</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Software Testing Inc.</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> Brasília, DF - Remoto</p>
@@ -288,15 +302,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Bibliotecário Digital</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Biblioteca Nacional</p>
-
+                    <div class="title-card">
+                        <h3>Bibliotecário Digital</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Biblioteca Nacional</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> São Paulo, SP</p>
@@ -322,15 +333,12 @@
 
                 <article class="card-vagas">
 
-                    <div>
-                        <div class="title-card">
-                            <h3>Revisor de Textos</h3>
-                            <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
-                        </div>
-
-                        <p>Editora Palavras</p>
-
+                    <div class="title-card">
+                        <h3>Revisor de Textos</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
                     </div>
+
+                    <p>Editora Palavras</p>
 
                     <div class="local-periodo">
                         <p><span><i class="fi fi-rr-marker"></i></span> Rio de Janeiro, RJ - Remoto</p>
@@ -465,16 +473,18 @@
                 <h3>Pronto para começar sua jornada?</h3>
                 <p>Crie seu perfil gratuitamente e tenha acesso a vagas exclusivas em empresas inclusivas</p>
 
-                <button>Criar meu perfil</button>
+                <button>
+                    <a href="./pages/login.html">Criar meu perfil</a>
+                </button>
             </div>
 
         </section>
 
-        <section class="planos">
+        <section class="planos" id="planos">
             <h2>Planos para empresas que acreditam na inclusão</h2>
             <p>Invista em diversidade, transforme vidas e construa um ambiente de trabalho mais justo e produtivo</p>
 
-            <div class="ofertas-flex">
+            <div class="ofertas-grid">
 
                 <div class="ofertas">
 
@@ -593,12 +603,12 @@
                 </div>
 
                 <div class="ofertas destaque">
-                    
+
                     <div class="destaque-badge">
                         <span>Mais popular</span>
                     </div>
 
-                    <div  class="planos-title">
+                    <div class="planos-title">
                         <h4>Inclusão ativa</h4>
                         <p>Profissional</p>
                         <p>R$<span class="preco-oferta">139,99</span>/mês</p>
@@ -607,10 +617,12 @@
                     <div class="planos-text">
                         <div class="icone-ofertas">
                             <span>
-                                <svg width="16" height="16" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"
+                                <svg width="16" height="16" viewBox="0 0 24.00 24.00" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000"
                                     stroke-width="0.00024000000000000003">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096">
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="0.096">
                                     </g>
                                     <g id="SVGRepo_iconCarrier">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -730,7 +742,7 @@
 
                 <div class="ofertas">
 
-                    <div  class="planos-title">
+                    <div class="planos-title">
                         <h4>Impacto Social</h4>
                         <p>Impacto Social</p>
                         <p>R$<span class="preco-oferta">159,99</span>/mês</p>
@@ -869,7 +881,66 @@
     </main>
 </body>
 <footer>
+    <footer class="footer">
+        <div class="footer-primeiro">
+            <div class="footer-segundo">
+                <h4>InfiniTEA</h4>
+                <p>Conectando talentos autistas a oportunidades de trabalho inclusivas</p>
+            </div>
 
-</footer>
+            <div class="footer-segundo">
+                <h4>Para Candidatos</h4>
+                <ul>
+                    <li><a href="#vagas">Buscar vagas</a></li>
+                    <li><a href="./pages/cadastro.html">Criar perfil</a></li>
+                    <li><a href="./pages/carreira.html">Dicas de carreira</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-segundo">
+                <h4>Para Empresas</h4>
+                <ul>
+                    <li><a href="#">Anunciar vaga</a></li>
+                    <li><a href="#">Sobre inclusão</a></li>
+                    <li><a href="#">Consultoria</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-segundo">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="./pages/sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="./pages/faq.html">FAQ</a></li>
+                </ul>
+
+                <div class="contatos">
+                    <a
+                        href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRpccrKrCGvSmMLXNLXBwlRWftsnpRnKvTNqQFFFdWhqCqbfGVbHTKzbVZqVCNDZffCwJsG"><img
+                            src="./Icons/Icon (1).png" alt="Email - enviar email para infinitea.contato@gmail.com"></a>
+                    <a href="https://www.linkedin.com/in/infinitea-sua-carreira-seu-jeito-7b31583a5/"><img
+                            src="./Icons/Icon (2).png" alt="Linkedin"></a>
+                    <a href="https://www.instagram.com/infinitea.oficial/"><img src="./Icons/Icon (3).png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="necessario">
+            <span>© 2025 InfiniTEA. Todos os direitos reservados.</span>
+            <div>
+                <a href="./pages/politica.html">Política de Privacidade</a>
+                <a href="./pages/termos.html">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    </body>
 
 </html>
