@@ -18,6 +18,18 @@
       cursor:pointer;
     }
 
+    .logo {
+      font-size:24px;
+      font-weight:bold;
+      color:#6b5cff;
+    }
+
+
+  .logo a {
+    text-decoration: none;
+    color: #5b5bd6;
+  }
+
     .btn-login {
       background:#c4b5fd; /* lilás pastel */
       padding:8px 20px;
