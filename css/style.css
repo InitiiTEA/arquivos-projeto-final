@@ -695,8 +695,4 @@ nav button:hover {
         gap: 1rem;
         margin-bottom: 2rem;
     }
-
-    .grid-dif {
-        grid-template-columns: 1fr;
-    }
 }
