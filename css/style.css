@@ -419,148 +419,6 @@ nav button:hover {
 /* Início section 4 */
 .planos {
     background-color: var(--color-white-medium);
-    padding: 4rem 9.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.planos h2{
-    font-size: 1.875rem;
-    font-weight: 600;
-    color: var(--color-purple);
-}
-
-.planos > p{
-    color: var(--color-blue-medium);
-    font-size: 1.125rem;
-    text-align: center;
-    max-width: 623px;
-    height: auto;
-    margin-bottom: 3rem;
-}
-
-.ofertas{
-    padding: 2rem;
-    background-color: var(--color-white);
-    box-shadow: 0px 2px 4px -2px var(--color-gray-blue);
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr auto;
-    text-align: center;
-    border-radius: 1rem;
-    gap: 0.5rem;
-}
-
-.ofertas h4{
-    color: var(--color-purple);
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.ofertas h4 + p{
-    color: var(--color-gray-blue);
-}
-
-.ofertas h4 + p + p{
-    font-size: 0.875rem;
-}
-
-.preco-oferta{
-    font-size: 2.25rem;
-    font-weight: 700;
-}
-
-.icone-ofertas{
-    display: flex;
-    flex-direction: row;
-    gap: 0.75rem;
-}
-
-.icone-ofertas p{
-    font-size: 0.875rem;
-}
-
-.planos-text{
-    gap: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.ofertas button{
-    background-color: var(--color-purple-soft);
-    color: var(--color-purple);
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.ofertas-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.p-final{
-    color: var(--color-blue-medium);
-    margin-bottom: 4rem;
-}
-
-.destaque{
-    border: solid var(--color-pink) 4px;
-}
-
-.destaque-badge{
-    position: absolute;
-    top: -0.75rem;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-
-    background-color: var(--color-pink);
-    color: var(--color-white);
-    white-space: nowrap;
-}
-
-/* Fim section 4 */
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    nav button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 860px) {
-    .ofertas-flex {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .grid-dif {
-        grid-template-columns: 1fr;
-    }
-
-    /* Início section 4 */
-.planos {
-    background-color: var(--color-white-medium);
     padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 6vw, 9.5rem);
     display: flex;
     flex-direction: column;
@@ -576,7 +434,7 @@ nav button:hover {
     text-align: center;
 }
 
-.planos>p {
+.planos > p {
     color: var(--color-blue-medium);
     font-size: 1.125rem;
     text-align: center;
@@ -646,7 +504,6 @@ nav button:hover {
         box-shadow 0.35s ease-in-out,
         transform 0.25s ease-in-out;
     transform-origin: center;
-
 }
 
 .ofertas button:hover {
@@ -689,10 +546,30 @@ nav button:hover {
     white-space: nowrap;
 }
 
-    .ofertas-grid {
-        display: grid;
-        grid-template-columns: 1fr;
+/* Fim section 4 */
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    .ofertas-flex {
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .grid-dif {
+        grid-template-columns: 1fr;
     }
 }
