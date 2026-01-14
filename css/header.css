@@ -160,7 +160,7 @@ body.dark .btn-outline {
         background: #25253a;
     }
 
-    .mobile-only-link {
+    body.dark .mobile-only-link {
         background-color: #004a66;
         color: #b6e0f5 !important;
     }
