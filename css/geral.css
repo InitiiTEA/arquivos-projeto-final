@@ -1,7 +1,11 @@
 .footer {
   background-color: #ffffff;
   padding: 40px 80px 20px;
+<<<<<<< Updated upstream
   font-family: "Poppins", sans-serif;
+=======
+  font-family: 'Poppins', sans-serif;
+>>>>>>> Stashed changes
   color: #555;
 }
 
