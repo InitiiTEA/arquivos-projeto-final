@@ -7,70 +7,116 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="./../css/sobre-nos.css"/>
+<link rel="stylesheet" href="./../css/header.css">
 </head>
 
 <body>
 
-<header>
-  <h2 class="logo"><a href="./../index.html">InfiniTEA</a></h2>
-  <nav>
-    <a href="#sobre">Sobre nós</a>
-    <a href="#candidatos">Para Candidatos</a>
-    <a href="#empresas">Para Empresas</a>
-    <a class="btn-login" onclick="abrirLogin()">Entrar</a>
-  </nav>
+<header class="header" id="header">
+    <div class="logo">
+        <a href="./../index.html"><img src="./../Icons/CreativeInfiniTEA.svg" alt="InfiniTEA Logo" ></a>
+    </div>
+
+    <nav class="nav" id="nav-menu">
+        <a href="#">Vagas</a>
+        <a href="./../pages/sobre-nos.html">Sobre</a>
+        <a href="#">Para Empresas</a>
+        <a href="#">Recursos</a>
+        <a href="./../pages/cadastro.html" class="mobile-only-link">Cadastrar</a>
+    </nav>
+
+    <div class="actions">
+        <button class="icon-btn" id="toggleTheme" aria-label="Alternar tema">
+            <img src="./../img/logotema.svg" alt="Ícone Tema">
+        </button>
+
+        <a href="./../pages/login.html" class="btn-outline">Entrar</a>
+        <a href="./../pages/cadastro.html" class="btn-primary desktop-only">Cadastro</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
 </header>
 
-<section class="hero">
-  <h1>Conectando talentos autistas a empresas inclusivas</h1>
-  <p>A InfiniTEA nasceu para transformar o acesso ao mercado de trabalho por meio da inclusão, do respeito e do apoio especializado.</p>
-</section>
 
-<section id="sobre">
-  <h2>Quem somos</h2>
-  <p>
-    A InfiniTEA é uma plataforma de empregabilidade dedicada a pessoas com Transtorno do Espectro Autista (TEA).
-    Nosso objetivo é criar conexões reais entre talentos e empresas que enxergam a diversidade como um valor estratégico e humano.
-  </p>
-</section>
+<section class="hero container">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="./../img/strategy.svg" alt="Mulher escrevendo Teamwork">
+      </div>
+      <div class="hero-text">
+        <h1>Conectando talentos autistas a empresas inclusivas</h1>
+        <p>A InfiniTEA nasceu para transformar o acesso ao mercado de trabalho por meio da inclusão, do respeito e do apoio especializado.</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Nosso propósito</h2>
-  <div class="grid">
-    <div class="box"><h3>Missão</h3><p>Promover a inclusão profissional de pessoas autistas de forma ética, acessível e sustentável.</p></div>
-    <div class="box"><h3>Visão</h3><p>Ser referência em empregabilidade inclusiva no Brasil.</p></div>
-    <div class="box"><h3>Valores</h3><p>Inclusão · Respeito · Diversidade · Acessibilidade · Responsabilidade social</p></div>
-  </div>
-</section>
+<section id="sobre" class="sobre container">
+    <div class="sobre-content">
+      <div class="sobre-card">
+        <div class="icon-circle-small"><i class="fa-regular fa-heart"></i></div>
+        <h2>Quem somos</h2>
+        <p>A InfiniTEA é uma plataforma de empregabilidade dedicada a pessoas com Transtorno do Espectro Autista (TEA). Nosso objetivo é criar conexões reais entre talentos e empresas que enxergam a diversidade como um valor estratégico e humano.</p>
+      </div>
+      <div class="sobre-image">
+        <img src="./../img/whoam.svg" alt="Teamwork">
+      </div>
+    </div>
+  </section>
 
-<section id="candidatos">
-  <h2>Para Candidatos</h2>
-  <p>Buscar vagas · Criar perfil · Dicas de carreira · Recursos</p>
-</section>
+<section class="proposito container">
+    <h2 class="section-title">Nosso propósito</h2>
+    <div class="grid-tres-colunas">
+      <div class="card-prop">
+        <div class="icon-circle blue"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Missão</h3>
+        <p>Promover a inclusão profissional de pessoas autistas de forma ética, acessível e sustentável.</p>
+      </div>
+      <div class="card-prop">
+        <div class="icon-circle green"><i class="fa-regular fa-eye"></i></div>
+        <h3>Visão</h3>
+        <p>Ser referência em empregabilidade inclusiva no Brasil.</p>
+      </div>
+      <div class="card-prop">
+        <div class="icon-circle pink"><i class="fa-regular fa-heart"></i></div>
+        <h3>Valores</h3>
+        <p>Inclusão • Respeito • Diversidade • Acessibilidade • Responsabilidade social</p>
+      </div>
+    </div>
+  </section>
 
-<section id="empresas">
-  <h2>Para Empresas</h2>
-  <p>Anunciar vaga · Sobre inclusão · Consultoria · Planos</p>
-</section>
+  <section class="impacto container">
+    <h2 class="section-title">Impacto social</h2>
+    <p class="subtitle">Parte da receita da InfiniTEA é destinada ao apoio de psicólogos especializados em TEA, fortalecendo a saúde mental, o desenvolvimento profissional e a inclusão no ambiente corporativo.</p>
+    
+    <div class="grid-impacto">
+      <div class="card-impacto">
+        <div class="icon-simple"><i class="fa-solid fa-users"></i></div>
+        <span class="number">+500</span>
+        <span class="label">profissionais cadastrados</span>
+      </div>
+      <div class="card-impacto">
+        <div class="icon-simple"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <span class="number">+120</span>
+        <span class="label">empresas inclusivas</span>
+      </div>
+      <div class="card-impacto">
+        <div class="icon-simple"><i class="fa-solid fa-brain"></i></div>
+        <span class="number">+30</span>
+        <span class="label">psicólogos apoiados</span>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Impacto social</h2>
-  <p>
-    Parte da receita da InfiniTEA é destinada ao apoio de psicólogos especializados em TEA,
-    fortalecendo a saúde mental, o desenvolvimento profissional e a inclusão no ambiente corporativo.
-  </p>
-  <div class="impacto">
-    <div>+500<br>profissionais cadastrados</div>
-    <div>+120<br>empresas inclusivas</div>
-    <div>+30<br>psicólogos apoiados</div>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Inclusão não é apenas uma escolha,<br>é um compromisso com o futuro.</h2>
-  <button onclick="mostrarMensagem()">Quero fazer parte dessa mudança</button>
-  <div id="mensagem">💜 Agradecemos seu interesse!</div>
-</section>
+  <section class="cta container">
+    <div class="cta-box">
+      <h2>Inclusão não é apenas uma escolha, é um compromisso com o futuro.</h2>
+      <button class="btn-cta">Quero fazer parte dessa mudança</button>
+    </div>
+  </section>
+</main>
 
 <footer>
   <div class="footer-grid">
@@ -112,9 +158,7 @@
   </div>
 </div>
 
-<script src="./../js/sobre-nos.js">
-  
-</script>
-
+<script src="./../js/sobre-nos.js"></script>
+<script src="./../js/header.js"></script>
 </body>
 </html>
