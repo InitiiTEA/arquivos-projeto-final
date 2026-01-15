@@ -51,6 +51,10 @@ button {
     font-family: inherit;
 }
 
+.link-login{
+    color: var(--color-white);
+}
+
 img {
     max-width: 100%;
     height: auto;
