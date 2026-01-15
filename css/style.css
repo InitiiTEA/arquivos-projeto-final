@@ -118,7 +118,6 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     gap: 1rem;
-    box-shadow: var(--shadow);
 }
 
 input:focus {
@@ -177,7 +176,7 @@ nav button {
     white-space: nowrap;
     gap: 0.5rem;
     padding: 0.75rem 4rem;
-    transition: var(--transition);
+    transition: transform 0.45s ease-out, background-color 0.45s ease-in-out;
 }
 
 nav button:hover {
@@ -186,7 +185,7 @@ nav button:hover {
 }
 
 /* ===== MAIN: SEÇÃO 2 - DSTQ-VAGAS ===== */
-.dstq-vagas {
+.dstq-vagas {   
     background-color: var(--color-white-gray);
     padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 6vw, 9.5rem);
 }
@@ -229,7 +228,7 @@ nav button:hover {
     border: solid var(--color-purple-soft) 1px;
     background-color: var(--color-white-medium);
     box-shadow: var(--shadow);
-    transition: var(--transition);
+    transition: transform 0.3s ease-in-out;
 }
 
 .grid-vagas article:hover {
