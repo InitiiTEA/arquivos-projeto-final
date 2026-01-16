@@ -582,6 +582,10 @@ nav button:hover {
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
+
+    .pg-inicial nav {
+        flex-direction: column;
+    }
     nav {
         display: flex;
         flex-direction: column;
