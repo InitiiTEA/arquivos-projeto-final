@@ -231,10 +231,6 @@ nav button:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.grid-vagas article:hover {
-    transform: translateY(-2px);
-}
-
 .title-card {
     display: flex;
     flex-direction: row;
@@ -250,7 +246,6 @@ nav button:hover {
 .savebtn {
     color: var(--color-pink);
     background: none;
-    border: none;
     cursor: pointer;
 }
 
