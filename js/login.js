@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Aqui você pode adicionar a lógica para enviar os dados ao servidor
         
         alert('login realizado com sucesso!');
-        window.location.href = '../../index.html';
+        window.location.href = './../index.html';
     });
     };
 
